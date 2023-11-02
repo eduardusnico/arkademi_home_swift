@@ -72,22 +72,22 @@ struct HomeView: View {
                     }
                     }
                     //Banner
-//                    AsyncImage(url: URL(string: banner.data.first!.img)) { image in
-//                        image.resizable()
-//                    } placeholder: {
-//                        ProgressView()
-//                    }.frame(minWidth: 380,maxWidth: .infinity,minHeight: 165,maxHeight:165).cornerRadius(8).padding(10).onAppear(){
-//                        apiCall().fetchData { (banners) in
-//                                            self.banner = banners
-//                        }
-//                    }
+                   AsyncImage(url: URL(string: banner.data.first!.img)) { image in
+                       image.resizable()
+                   } placeholder: {
+                       ProgressView()
+                   }.frame(minWidth: 380,maxWidth: .infinity,minHeight: 165,maxHeight:165).cornerRadius(8).padding(10).onAppear(){
+                       apiCall().fetchData { (banners) in
+                                           self.banner = banners
+                       }
+                   }
                     HStack{
                         VStack(alignment:.leading){
-//                            AsyncImage(url: URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/Ni9jsrKlAWkiEWfguyAQ8BU2Acd6dAKC1pAaNhne.png")) { image in
-//                                image.resizable()
-//                            } placeholder: {
-//                                ProgressView()
-//                            }.frame(minWidth: 0,maxWidth: 110,minHeight: 0,maxHeight:40)
+                           AsyncImage(url: URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/Ni9jsrKlAWkiEWfguyAQ8BU2Acd6dAKC1pAaNhne.png")) { image in
+                               image.resizable()
+                           } placeholder: {
+                               ProgressView()
+                           }.frame(minWidth: 0,maxWidth: 110,minHeight: 0,maxHeight:40)
                             Text("Punya Voucher Prakerja?").font(.system(size: 15,weight:.bold))
                                 .foregroundColor(.black)
                             Spacer().frame(height:6)
@@ -180,21 +180,21 @@ struct HomeView: View {
                         ScrollView(.horizontal) {
                             HStack(spacing:10){
                                 Spacer().frame(width:2)
-//                                AsyncImage(url:URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/yBjaS6lSUqnCygRJ9SEVYyjbfP0ywBiSWY6uD4Nk.png")) { image in
-//                                    image.resizable()
-//                                } placeholder: {
-//                                    ProgressView()
-//                                }.frame(width:170,height:120)
-//                                AsyncImage(url:URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/moDn2psqLFPZoKG9atJk6Swr4UbIb8rdOApMaqM5.png")) { image in
-//                                    image.resizable()
-//                                } placeholder: {
-//                                    ProgressView()
-//                                }.frame(width:170,height:120)
-//                                AsyncImage(url:URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/twIhk1HGF6lQyZnRHHRwZ58ZsgmEsabrF0GjvEEW.png")) { image in
-//                                    image.resizable()
-//                                } placeholder: {
-//                                    ProgressView()
-//                                }.frame(width:170,height:120)
+                               AsyncImage(url:URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/yBjaS6lSUqnCygRJ9SEVYyjbfP0ywBiSWY6uD4Nk.png")) { image in
+                                   image.resizable()
+                               } placeholder: {
+                                   ProgressView()
+                               }.frame(width:170,height:120)
+                               AsyncImage(url:URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/moDn2psqLFPZoKG9atJk6Swr4UbIb8rdOApMaqM5.png")) { image in
+                                   image.resizable()
+                               } placeholder: {
+                                   ProgressView()
+                               }.frame(width:170,height:120)
+                               AsyncImage(url:URL(string:"https://d19izmiuoyzsz.cloudfront.net/attachment/twIhk1HGF6lQyZnRHHRwZ58ZsgmEsabrF0GjvEEW.png")) { image in
+                                   image.resizable()
+                               } placeholder: {
+                                   ProgressView()
+                               }.frame(width:170,height:120)
                                 Spacer().frame(width:2)
                             }
                         }
